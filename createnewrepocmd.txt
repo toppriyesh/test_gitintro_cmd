@@ -79,4 +79,21 @@ Changes to be committed:
 <!-- we commited what we had in the staging area. -->
 
 C:\Users\acepr\Music\test_repo> git status <!-- lets check the staging area and git -->
+On branch main
+nothing to commit, working tree clean       <!-- because we checked the staging area and git just after and just before any activity. -->
 
+C:\Users\acepr\Music\test_repo>             <!-- we made changes to a file and saved the changes, nothing else, like add to stage etc. -->
+C:\Users\acepr\Music\test_repo> git commit  
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   createnewrepocmd.txt    <!-- remember we made changes to the file. It recognised the file is modified -->
+no changes added to commit (use "git add" and/or "git commit -a")
+
+<!-- something that happened earlier ( Im actually using cmd along with making notes in createnewrepocmd.txt )--> 
+C:\Users\acepr\Music\test_repo>git commit   <!-- interesting !!!! -->
+[main fdd6214] commiting bcos cmd prompted
+ 1 file changed, 38 insertions(+)
+
+c:\Users\acepr\Music\test_repo> git add . <!-- add space . , . means all files in the repository, for individual files we have to name them -->
