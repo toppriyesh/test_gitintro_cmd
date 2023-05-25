@@ -1,0 +1,44 @@
+c:\Users\Someone>
+
+c:\Users\Someone> cd Music  <!-- C hange D irectory to Music Folder -->
+c:\Users\Someone\Music>     <!-- Navigated to inside Music folder -->
+
+c:\Users\Someone\Music> mkdir test_repo  <!-- M ake D irectory 'test-repo' (Folder) -->
+c:\Users\Someone\Music>     <!-- 'test-repo' Folder Made inside Music folder -->
+
+c:\Users\Someone\Music> cd test_repo  <!-- C hange D irectory to 'test-repo' (Folder) -->
+c:\Users\Someone\Music\test-repo> <!-- Navigated to inside 'test-repo' (Folder) -->
+
+c:\Users\Someone\Music\test-repo> git init <!-- Git Initialize, Because folder test_repo is initialized with Git and is now a Git Repository 
+                                                any files you create and save changes within it now is seen by Git -->
+
+c:\Users\Someone\Music\test-repo>          <!-- Make sure that you are in the right directory (test repo) before doing any git commands -->
+c:\Users\Someone\Music\test-repo> git commit <!-- Works as you can see below because you are in the right directory (Git Initialize)
+On Branch Master <!-- or Main, or your custom name -->
+Initial commit
+Nothing to commit
+
+c:\Users\Someone\Music\test-repo> cd .. <!-- C hange D irectory back (.. means back to the parent directory) -->
+c:\Users\Someone\Music>                 <!-- Back one folder (You can go back but only one directory/folder at a time 
+c:\Users\Someone>
+
+c:\Users\Someone> git commit <!-- Error because this directory is not Git Initialized and therefore not a git repository -->
+fatal: not a git repository (or any of the parent repositories) .git
+
+c:\Users\Someone> cd Music              <!-- You can go up 'cd' also  but only one at a time -->
+c:\Users\Someone\Music> cd test_repo
+c:\Users\Someone\Music\test_repo>
+
+<!-- if you check the Music folder you will see the test-repo folder just made using cmd.
+    open the test-repo folder and right click in the space then open with VSCode.
+    It will open with VSCode and here you can create new files e.g. Readme.md, about.txt, testcode.html, etc.
+    These files will be automatically updated inside the test-repo folder as you save them. Shortcut ctrl+s. -->
+
+
+c:\Users\Someone\Music\test_repo> git add readme.md <!-- Add file  readme.md or any, to the 
+                                                        'STAGE' Area in Git means just add to this area/folder ready to commit
+                                                        but 'NOT' commit ed yet. -->
+c:\Users\Someone\Music\test_repo> <!-- nothing wrong happens here as it is successfully added to the 'stage' area -->
+
+c:\Users\Someone\Music\test_repo> git status <!-- to check after what we just did check the status of git -->
+
