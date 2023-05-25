@@ -1,0 +1,27 @@
+Ref: https://www.youtube.com/watch?v=DVRQoVRzMIY&t=1265s
+
+time stamp 
+
+28:40
+
+C:\Users\acepr\Music\test_repo>git remote add origin https://github.com/toppriyesh/test_gitintro_cmd.git
+
+C:\Users\acepr\Music\test_repo> git checkout
+
+C:\Users\acepr\Music\test_repo> git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+C:\Users\acepr\Music\test_repo> git checkout main
+Already on 'main'
+
+C:\Users\acepr\Music\test_repo> git push -u origin main
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 2.90 KiB | 148.00 KiB/s, done.
+Total 13 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/toppriyesh/test_gitintro_cmd.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
