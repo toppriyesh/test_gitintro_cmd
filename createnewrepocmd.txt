@@ -78,12 +78,12 @@ Changes to be committed:
 
 <!-- we commited what we had in the staging area. -->
 
-C:\Users\acepr\Music\test_repo> git status <!-- lets check the staging area and git -->
+C:\Users\someone\Music\test_repo> git status <!-- lets check the staging area and git -->
 On branch main
 nothing to commit, working tree clean       <!-- because we checked the staging area and git just after and just before any activity. -->
 
-C:\Users\acepr\Music\test_repo>             <!-- we made changes to a file and saved the changes, nothing else, like add to stage etc. -->
-C:\Users\acepr\Music\test_repo> git commit  
+C:\Users\Someone\Music\test_repo>             <!-- we made changes to a file and saved the changes, nothing else, like add to stage etc. -->
+C:\Users\Someone\Music\test_repo> git commit  
 On branch main
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -92,8 +92,22 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 
 <!-- something that happened earlier ( Im actually using cmd along with making notes in createnewrepocmd.txt )--> 
-C:\Users\acepr\Music\test_repo>git commit   <!-- interesting !!!! -->
+C:\Users\Someone\Music\test_repo>git commit   <!-- interesting !!!! -->
 [main fdd6214] commiting bcos cmd prompted
  1 file changed, 38 insertions(+)
 
-c:\Users\acepr\Music\test_repo> git add . <!-- add space . , . means all files in the repository, for individual files we have to name them -->
+c:\Users\Someone\Music\test_repo> git add . <!-- add space . , . means everything in the repository, for individual files we have to name them -->
+
+c:\Users\Someone\Music\test_repo> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   createnewrepocmd.txt
+
+C:\Users\Someone\Music\test_repo> git commit -m "made final changes" <!-- -m "" means message. It made me add a message earlier when I forgot-->"
+[main 098442f] made final changes
+ 1 file changed, 17 insertions(+)
+
+C:\Users\Someone\Music\test_repo>
+
+<!-- from here on watch from 24:24 in the youtube video -->
