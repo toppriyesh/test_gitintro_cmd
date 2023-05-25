@@ -42,3 +42,41 @@ c:\Users\Someone\Music\test_repo> <!-- nothing wrong happens here as it is succe
 
 c:\Users\Someone\Music\test_repo> git status <!-- to check after what we just did check the status of git -->
 
+C:\Users\Someone\Music\test_repo> git status
+On branch main
+No commits yet
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   readme.md                       <!-- because this file we added to the 'stage' area -->
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        create new repo cmd.txt                        <!-- because this file we did NOT add to the 'stage' area -->
+                                                    <!-- do not have spaces in the file name -->
+
+C:\Users\Someone\Music\test_repo> git add create new repo cmd.txt
+fatal: pathspec 'create' did not match any files
+<!-- I renamed the create new repo cmd.txt to createnewrepocmd.txt without any spaces -->
+
+c:\Users\Someone\Music\test_repo> git add createnewrepocmd.txt
+
+c:\Users\Someone\Music\test_repo> git status        <!-- to check after what we just did check the status of git -->
+
+C:\Users\Someone\Music\test_repo> git status        <!-- result -->
+On branch main
+No commits yet
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)      <!-- Note (use "git rm --cached <file>..." to unstage) -->
+        new file:   createnewrepocmd.txt
+        new file:   readme.md
+    
+    C:\Users\Someone\Music\test_repo> git commit -m"added readme.md and createanewrepo.txt
+[main (root-commit) 5770be7] added readme.md and createanewrepo.txt <!-- note commit id -->
+ 2 files changed, 46 insertions(+)                                  <!-- more technical info -->
+ create mode 100644 createnewrepocmd.txt
+ create mode 100644 readme.md
+
+<!-- we commited what we had in the staging area. -->
+
+C:\Users\acepr\Music\test_repo> git status <!-- lets check the staging area and git -->
+
